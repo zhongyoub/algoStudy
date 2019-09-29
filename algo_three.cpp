@@ -22,13 +22,13 @@ int getMaxMoutain(int a[], int n)
 			{
 				i++;
 				tempMax++;
-
 			}
 			while (i<n - 1 && a[i]>a[i + 1])
 			{
 				i++;
 				tempMax++;
 			}
+			tempDown = i;
 			//退出while循环，不满足a[i]>a[i+1], 即a[i]<=a[i+1]更新maxlen
 			if (a[i] <= a[i + 1])
 			{
@@ -43,8 +43,9 @@ int getMaxMoutain(int a[], int n)
 		}
 	}
 	for (int i = up; i <= down; i++)
-		cout << a[i] << " ";
+		cout << a[i] << "  ";
 	cout << endl;
+	return maxLen;
 }
 
 

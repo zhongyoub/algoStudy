@@ -7,6 +7,8 @@
 const int N = 100;
 const int dimes[] = { 1,2,5,10 };   //此处必须是const
 
+
+int coinChange1(int amount);
 /*
 amount: total money
 kinds:  the kind of money

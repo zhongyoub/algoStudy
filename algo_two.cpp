@@ -1,4 +1,24 @@
 #include "algo_two.h"
+#include <iostream>
+using namespace std;
+
+/*
+±©Á¦·¨
+*/
+int coinChange1(int amount)
+{
+	int m = 0;
+	for (int i = 0; i <= amount / 1; i++)
+		for (int j = 0; j <= (amount - i * 1) / 2; j++)
+			for (int k = 0; k <= (amount - i * 1 - j * 2) / 5; k++)
+				for (int l = 0; l <= (amount - i * 1 - j * 2 - k * 5) / 10; l++)
+					if (amount == i + j * 2 + k * 5 + l * 10)
+					{
+						++m;
+						cout << "1 yuan:" << i << ",     2 yuan:" << j << ", 5 yuan:" << k << ", 10 yuan:" << l << endl;
+					}
+	return m;
+}
 
 /*
 amount: total money
