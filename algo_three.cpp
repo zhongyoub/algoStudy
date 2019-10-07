@@ -36,7 +36,7 @@ int getMaxMoutain(int a[], int n)
 				if (tempMax > maxLen)
 				{
 					maxLen = tempMax;   
-					up = tempUp;
+					up = tempUp;          //更新下标
 					down = tempDown;
 				}
 			}
