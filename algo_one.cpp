@@ -1,4 +1,5 @@
 #include "algo_one.h"
+#include "common.h"
 #include <iostream>
 using namespace std;
 
@@ -30,13 +31,6 @@ int max_sequence(int arr[], int n)
 	return max;
 }
 
-/*求三个数最大值*/
-int max3(int i, int j, int k)
-{
-	if (i >= j && i >= k)
-		return i;
-	return max3(j, k, i);
-}
 
 /*
 分治法求解，最大连续子序列和要么出现在数组左半部分，要么出现在数组右半部分，要么横跨左右两半部分
