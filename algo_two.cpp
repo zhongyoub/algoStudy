@@ -1,6 +1,6 @@
 #include "algo_two.h"
+#include "common.h"
 #include <iostream>
-using namespace std;
 
 /*
 100元换成不同中的零钱，求换法
@@ -88,15 +88,21 @@ int coinExchange3(int total, int cashList[], int n, int *dp[], int num)
  Write a function to compute the fewest number of coins 
  that you need to make up that amount. If that amount of 
  money cannot be made up by any combination of the coins, return -1.
- 思路：换钱也分为是否包含coin[j]，定义dp[i]为钱数为i的换钱的最小个数
+ dp[i]表示总数为i的最少数目的换钱方法
+ 思路：从coins中遍历，如果硬币值小于i,则使用dp[i-coins[j]+1,最长使用1元的硬币i种
  dp[i]=min(dp[i],dp[i-coin[j]]+1)    
 */
-int coinExchange4(int total, int cashList[], int n)
+int coinExchange4(int amount, vector<int> &coins)
 {
-	if (total == 0)
+	if (amount == 0)
 		return 0;
-	if (n == 0)
-		return -1;
-	for (int i = 1;i<=total;i++)
-		
+	vector<int> dp(amount + 1, amount + 1);  //大小为 amount+1，初始值为 amount+1
+	dp[0] = 0;
+	for (int i = 1; i <= amount; i++)
+	{
+		for (int j = 0; j<coins.size(); j++)
+			if (coins[j] <= i)
+				dp[i] = min(dp[i], dp[i - coins[j]] + 1);
+	}
+	return (dp[amount] > amount) ? -1 : dp[amount];
 }

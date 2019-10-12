@@ -10,6 +10,16 @@ int max(int a, int b)
 		return b;
 }
 
+/*
+求两个数的小者
+*/
+int min(int a, int b)
+{
+	if (a >= b)
+		return b;
+	else
+		return a;
+}
 
 /*求三个数最大值*/
 int max3(int i, int j, int k)
@@ -43,5 +53,15 @@ void maxtrixMultiply(int *a[],  int *b[])
 		}
 		cout << endl;
 	}
+}
 
+/*
+交换两个变量
+*/
+void swap(int a[], int i, int j)
+{
+	int temp;
+	temp = a[i];
+	a[i] = a[j];
+	a[j] = temp;
 }

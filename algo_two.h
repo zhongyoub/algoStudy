@@ -1,4 +1,6 @@
 #pragma once
+#include <vector>
+using namespace std;
 
 /*
 将100元换成1元，2元，5元，10元,有多少种换法
@@ -33,4 +35,4 @@ int coinExchange3(int total, int cashList[], int n, int *dp[], int num);
 /*
 给定钱 x, 硬币（c1,c2..)，如何换使的硬币数最少，或是如果不能兑换成功，return -1
 */
-int coinExchange4(int total, int cashList[], int n);
+int coinExchange4(int amount, vector<int> &coins);
