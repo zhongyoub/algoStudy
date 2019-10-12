@@ -2,6 +2,7 @@
 #include "algo_two.h"
 #include "algo_three.h"
 #include "algo_four.h"
+#include "common.h"
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -14,8 +15,8 @@ int main()
 	struct Node head, first, second;
 	head.data = 10, first.data = 5, second.data= 15;
 	head.next = &first, first.next = &second, second.next = NULL;
-	num = getTailk2(&head, 3);
-	cout << num << endl;
+//	num = getTailk2(&head, 3);
+//	cout << num << endl;
 	system("pause");
 	return 0;
 }

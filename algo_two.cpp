@@ -3,6 +3,9 @@
 using namespace std;
 
 /*
+100元换成不同中的零钱，求换法
+*/
+/*
 暴力法
 */
 int coinChange1(int amount)
@@ -81,5 +84,19 @@ int coinExchange3(int total, int cashList[], int n, int *dp[], int num)
 
 
 /*
-给定钱 x, 硬币（c1,c2..)，如果换使的硬币数最少，或是如果不能兑换成功，return -1
+给定钱x, 硬币（c1,c2..)，如果换使的硬币数最少，或是如果不能兑换成功，return -1
+ Write a function to compute the fewest number of coins 
+ that you need to make up that amount. If that amount of 
+ money cannot be made up by any combination of the coins, return -1.
+ 思路：换钱也分为是否包含coin[j]，定义dp[i]为钱数为i的换钱的最小个数
+ dp[i]=min(dp[i],dp[i-coin[j]]+1)    
 */
+int coinExchange4(int total, int cashList[], int n)
+{
+	if (total == 0)
+		return 0;
+	if (n == 0)
+		return -1;
+	for (int i = 1;i<=total;i++)
+		
+}
