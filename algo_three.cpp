@@ -1,10 +1,10 @@
-#include "algo_three.h"
+ï»¿#include "algo_three.h"
 #include "common.h"
 #include <iostream>
 using namespace std;
 
 /*
-´Ó×óµ½ÓÒÉ¨Ãè£¬ÊÇ·ñÂú×ãÉ½ÂöĞÔÖÊ£¬Èç¹ûÂú×ã,ÔòtempMax++, ²»Âú×ã£¬Ôò¸üĞÂµ±Ç°µÃµ½É½ÂöµÄ³¤¶ÈmaxLen, ¼ÌĞøÏÂÒ»¸ö
+ä»å·¦åˆ°å³æ‰«æï¼Œæ˜¯å¦æ»¡è¶³å±±è„‰æ€§è´¨ï¼Œå¦‚æœæ»¡è¶³,åˆ™tempMax++, ä¸æ»¡è¶³ï¼Œåˆ™æ›´æ–°å½“å‰å¾—åˆ°å±±è„‰çš„é•¿åº¦maxLen, ç»§ç»­ä¸‹ä¸€ä¸ª
 */
 int getMaxMoutain(int a[], int n)
 {
@@ -18,7 +18,7 @@ int getMaxMoutain(int a[], int n)
 		int tempUp = 0, tempDown = 0;
 		if (a[i] < a[i + 1])
 		{
-			tempUp = i;                            //¼ÇÂ¼ÏÂ±ê
+			tempUp = i;                            //è®°å½•ä¸‹æ ‡
 			while (i < n - 1 && a[i] < a[i + 1])
 			{
 				i++;
@@ -29,18 +29,18 @@ int getMaxMoutain(int a[], int n)
 				i++;
 				tempMax++;
 			}
-			tempDown = i;                        //¼ÇÂ¼ÏÂ±ê
-			//ÍË³öwhileÑ­»·£¬²»Âú×ãa[i]>a[i+1], ¼´a[i]<=a[i+1]¸üĞÂmaxlen
+			tempDown = i;                        //è®°å½•ä¸‹æ ‡
+			//é€€å‡ºwhileå¾ªç¯ï¼Œä¸æ»¡è¶³a[i]>a[i+1], å³a[i]<=a[i+1]æ›´æ–°maxlen
 			if (a[i] <= a[i + 1])
 			{
 				if (tempMax > maxLen)
 				{
 					maxLen = tempMax;   
-					up = tempUp;          //¸üĞÂÏÂ±ê
+					up = tempUp;          //æ›´æ–°ä¸‹æ ‡
 					down = tempDown;
 				}
 			}
-			i--;      //ÃÖ²¹forÖĞµÄi++
+			i--;      //å¼¥è¡¥forä¸­çš„i++
 		}
 	}
 	for (int i = up; i <= down; i++)
@@ -50,9 +50,9 @@ int getMaxMoutain(int a[], int n)
 }
 
 /*
-ÓÃÁ½¸öÖ¸Õë£¬ÓÃÒ»¸öÂıÖ¸ÕëÓÃÀ´±ê¼ÇÉ½ÂöµÄÈë¿Ú£¬ÓÃÒ»¸ö¿ìÖ¸Õë£¬±éÀúºóÃæµÄÊı¾İ£¬
-Èç¹ûºóÃæµÄÊı¾İ·ûºÏÉ½ÂöµÄÒªÇó£¬ÄÇÃ´¿ìÖ¸Õë¾Í¼ÌĞø±éÀú£¬Èç¹û¿ìÖ¸ÕëÓöµ½µÄÊı¾İ²»ÔÙÂú×ãÉ½ÂöµÄÊıÑ§ÒªÇó£¬
-ÄÇÃ´Ê×ÏÈÅĞ¶ÏÂıÖ¸ÕëºÍ¿ìÖ¸ÕëÖ®¼äÊÇ·ñÂú×ãÒ»¸öÉ½Âö£¬Èç¹ûÂú×ã£¬¸üĞÂÒ»ÏÂ×î´óµÄÉ½Âö³¤¶ÈºÍ¿ìÖ¸ÕëºÍÂıÖ¸ÕëµÄÎ»ÖÃ£¬ÔÙ¼ÌĞø±éÀú
+ç”¨ä¸¤ä¸ªæŒ‡é’ˆï¼Œç”¨ä¸€ä¸ªæ…¢æŒ‡é’ˆç”¨æ¥æ ‡è®°å±±è„‰çš„å…¥å£ï¼Œç”¨ä¸€ä¸ªå¿«æŒ‡é’ˆï¼Œéå†åé¢çš„æ•°æ®ï¼Œ
+å¦‚æœåé¢çš„æ•°æ®ç¬¦åˆå±±è„‰çš„è¦æ±‚ï¼Œé‚£ä¹ˆå¿«æŒ‡é’ˆå°±ç»§ç»­éå†ï¼Œå¦‚æœå¿«æŒ‡é’ˆé‡åˆ°çš„æ•°æ®ä¸å†æ»¡è¶³å±±è„‰çš„æ•°å­¦è¦æ±‚ï¼Œ
+é‚£ä¹ˆé¦–å…ˆåˆ¤æ–­æ…¢æŒ‡é’ˆå’Œå¿«æŒ‡é’ˆä¹‹é—´æ˜¯å¦æ»¡è¶³ä¸€ä¸ªå±±è„‰ï¼Œå¦‚æœæ»¡è¶³ï¼Œæ›´æ–°ä¸€ä¸‹æœ€å¤§çš„å±±è„‰é•¿åº¦å’Œå¿«æŒ‡é’ˆå’Œæ…¢æŒ‡é’ˆçš„ä½ç½®ï¼Œå†ç»§ç»­éå†
 */
 int getMaxmoutian2(int A[], int n)
 {
@@ -61,30 +61,30 @@ int getMaxmoutian2(int A[], int n)
 	int fast = 1, slow = 0, maxLen = 0;
 	int tag_less = 0, tag_more = 0;
 	while (fast < n) {
-		if (tag_less == 0 && tag_more == 0 && A[fast - 1] < A[fast])//´¦ÓÚÉ½ÂöµÄÇ°°ë¶Î£¬¿ªÊ¼É½Âö
+		if (tag_less == 0 && tag_more == 0 && A[fast - 1] < A[fast])//å¤„äºå±±è„‰çš„å‰åŠæ®µï¼Œå¼€å§‹å±±è„‰
 		{
 			fast++;
 			tag_less = 1;
 		}
 		else if (tag_less == 1 && tag_more == 0 && A[fast - 1] < A[fast])
 			fast++;
-		else if (tag_less == 1 && tag_more == 0 && A[fast - 1] > A[fast])//Óöµ½É½·å
+		else if (tag_less == 1 && tag_more == 0 && A[fast - 1] > A[fast])//é‡åˆ°å±±å³°
 		{
 			fast++;
 			tag_more = 1;
 		}
-		else if (tag_less == 1 && tag_more == 1 && A[fast - 1] > A[fast])//Óöµ½É½ÂöµÄºó°ë¶Î
+		else if (tag_less == 1 && tag_more == 1 && A[fast - 1] > A[fast])//é‡åˆ°å±±è„‰çš„ååŠæ®µ
 		{
 			fast++;
 		}
-		else if (tag_less == 1 && tag_more == 1 && A[fast - 1] <= A[fast])//É½Âö½áÊø
+		else if (tag_less == 1 && tag_more == 1 && A[fast - 1] <= A[fast])//å±±è„‰ç»“æŸ
 		{
 			tag_less = 0;
 			tag_more = 0;
 			maxLen = max(maxLen, fast - slow);
 			slow = fast - 1;
 		}
-		else {//²»·ûºÏÉ½ÂöµÄÒªÇó
+		else {//ä¸ç¬¦åˆå±±è„‰çš„è¦æ±‚
 			tag_less = 0;
 			tag_more = 0;
 			slow = fast;

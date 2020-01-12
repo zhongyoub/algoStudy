@@ -1,16 +1,16 @@
-#pragma once
+ï»¿#pragma once
 
 /*
-Êý×éµÄÉ½·åÎÊÌâ
-ÎÒÃÇ°ÑÊý×é A ÖÐ·ûºÏÏÂÁÐÊôÐÔµÄÈÎÒâÁ¬Ðø×ÓÊý×é B ³ÆÎª ¡°É½Âö¡±£º
+æ•°ç»„çš„å±±å³°é—®é¢˜
+æˆ‘ä»¬æŠŠæ•°ç»„ A ä¸­ç¬¦åˆä¸‹åˆ—å±žæ€§çš„ä»»æ„è¿žç»­å­æ•°ç»„ B ç§°ä¸º â€œå±±è„‰â€ï¼š
 B.length >= 3
-´æÔÚ 0 < i < B.length - 1 Ê¹µÃ B[0] < B[1] < ¡­ B[i-1] < B[i] > B[i+1] > ¡­ > B[B.length - 1]
-£¨×¢Òâ£ºB ¿ÉÒÔÊÇ A µÄÈÎÒâ×ÓÊý×é£¬°üÀ¨Õû¸öÊý×é A¡££©
-£¨1£©¸ø³öÒ»¸öÕûÊýÊý×é A£¬·µ»Ø×î³¤ ¡°É½Âö¡± µÄ³¤¶È¡£Èç¹û²»º¬ÓÐ ¡°É½Âö¡± Ôò·µ»Ø 0¡£
-£¨2£©Êä³öÉ½Âö
+å­˜åœ¨ 0 < i < B.length - 1 ä½¿å¾— B[0] < B[1] < â€¦ B[i-1] < B[i] > B[i+1] > â€¦ > B[B.length - 1]
+ï¼ˆæ³¨æ„ï¼šB å¯ä»¥æ˜¯ A çš„ä»»æ„å­æ•°ç»„ï¼ŒåŒ…æ‹¬æ•´ä¸ªæ•°ç»„ Aã€‚ï¼‰
+ï¼ˆ1ï¼‰ç»™å‡ºä¸€ä¸ªæ•´æ•°æ•°ç»„ Aï¼Œè¿”å›žæœ€é•¿ â€œå±±è„‰â€ çš„é•¿åº¦ã€‚å¦‚æžœä¸å«æœ‰ â€œå±±è„‰â€ åˆ™è¿”å›ž 0ã€‚
+ï¼ˆ2ï¼‰è¾“å‡ºå±±è„‰
 */
 /*
-´Ó×óµ½ÓÒÉ¨Ãè£¬ÊÇ·ñÂú×ãÉ½ÂöÐÔÖÊ£¬Èç¹ûÂú×ã,ÔòtempMax++, ²»Âú×ã£¬Ôò¸üÐÂµ±Ç°µÃµ½É½ÂöµÄ³¤¶ÈmaxLen, ¼ÌÐøÏÂÒ»¸ö
+ä»Žå·¦åˆ°å³æ‰«æï¼Œæ˜¯å¦æ»¡è¶³å±±è„‰æ€§è´¨ï¼Œå¦‚æžœæ»¡è¶³,åˆ™tempMax++, ä¸æ»¡è¶³ï¼Œåˆ™æ›´æ–°å½“å‰å¾—åˆ°å±±è„‰çš„é•¿åº¦maxLen, ç»§ç»­ä¸‹ä¸€ä¸ª
 */
 int getMaxMoutain(int a[], int n);
 

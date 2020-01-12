@@ -1,4 +1,4 @@
-#include "common.h"
+ï»¿#include "common.h"
 #include <iostream>
 using namespace std;
 
@@ -11,7 +11,7 @@ int max(int a, int b)
 }
 
 /*
-ÇóÁ½¸öÊıµÄĞ¡Õß
+æ±‚ä¸¤ä¸ªæ•°çš„å°è€…
 */
 int min(int a, int b)
 {
@@ -21,7 +21,7 @@ int min(int a, int b)
 		return a;
 }
 
-/*ÇóÈı¸öÊı×î´óÖµ*/
+/*æ±‚ä¸‰ä¸ªæ•°æœ€å¤§å€¼*/
 int max3(int i, int j, int k)
 {
 	if (i >= j && i >= k)
@@ -30,8 +30,8 @@ int max3(int i, int j, int k)
 }
 
 /*
-ÊµÏÖÁ½¸ö¾ØÕóÏà³Ë
-¾ØÕóaµÄĞĞÊıM£¬ÁĞÊıN, BµÄÁĞÊıK
+å®ç°ä¸¤ä¸ªçŸ©é˜µç›¸ä¹˜
+çŸ©é˜µaçš„è¡Œæ•°Mï¼Œåˆ—æ•°N, Bçš„åˆ—æ•°K
 */
 void maxtrixMultiply(int *a[],  int *b[])
 {
@@ -56,7 +56,7 @@ void maxtrixMultiply(int *a[],  int *b[])
 }
 
 /*
-½»»»Á½¸ö±äÁ¿
+äº¤æ¢ä¸¤ä¸ªå˜é‡
 */
 void swap(int a[], int i, int j)
 {

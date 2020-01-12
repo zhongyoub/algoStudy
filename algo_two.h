@@ -1,29 +1,29 @@
-#pragma once
+ï»¿#pragma once
 #include <vector>
 using namespace std;
 
 /*
-½«100Ôª»»³É1Ôª£¬2Ôª£¬5Ôª£¬10Ôª,ÓĞ¶àÉÙÖÖ»»·¨
-(1)ÕâÊÇÍêÈ«±³°üµÄ±äÌå£¬µİ¹é·½·¨ÊÇÓÃµ±Ç°ÕâÖÖ±ÒÖµ»»ºÍ²»ÓÃÇé¿öÏÂ»»
+å°†100å…ƒæ¢æˆ1å…ƒï¼Œ2å…ƒï¼Œ5å…ƒï¼Œ10å…ƒ,æœ‰å¤šå°‘ç§æ¢æ³•
+(1)è¿™æ˜¯å®Œå…¨èƒŒåŒ…çš„å˜ä½“ï¼Œé€’å½’æ–¹æ³•æ˜¯ç”¨å½“å‰è¿™ç§å¸å€¼æ¢å’Œä¸ç”¨æƒ…å†µä¸‹æ¢
 */
 const int N = 100;
-const int dimes[] = { 1,2,5,10 };   //´Ë´¦±ØĞëÊÇconst
+const int dimes[] = { 1,2,5,10 };   //æ­¤å¤„å¿…é¡»æ˜¯const
 
 
 int coinChange1(int amount);
 /*
 amount: total money
 kinds:  the kind of money
-·ÖÎª°üº¬¸ÃÖÖÓë²»°üº¬¸ÃÖÖ£ºcoc(A, [C1, C2¡­Cn])=coc(A-C1, [C1, C2¡­Cn]) + coc(A, [C2, C3¡­Cn]);
+åˆ†ä¸ºåŒ…å«è¯¥ç§ä¸ä¸åŒ…å«è¯¥ç§ï¼šcoc(A, [C1, C2â€¦Cn])=coc(A-C1, [C1, C2â€¦Cn]) + coc(A, [C2, C3â€¦Cn]);
 */
 int coinExchangeRecursion(int amount, int cashlist[], int n);
 
-int coinExchangeRecursion2(int n, int m); //µİ¹é·½Ê½ÊµÏÖ£¬¸üºÃÀí½â
+int coinExchangeRecursion2(int n, int m); //é€’å½’æ–¹å¼å®ç°ï¼Œæ›´å¥½ç†è§£
 
 /*
-¶¯Ì¬¹æ»®·½·¨
-dp[i][j]£ºÇ°i¸öÓ²±Ò¶Ò»»µÄÇ®ÊıÎªjÊ±µÄ×ÜµÄ×éºÏÊı
-±íÊ¾Ñ¡ÔñµÚi¸öa[i]Óë²»Ñ¡ÔñµÚi¸öa[i]
+åŠ¨æ€è§„åˆ’æ–¹æ³•
+dp[i][j]ï¼šå‰iä¸ªç¡¬å¸å…‘æ¢çš„é’±æ•°ä¸ºjæ—¶çš„æ€»çš„ç»„åˆæ•°
+è¡¨ç¤ºé€‰æ‹©ç¬¬iä¸ªa[i]ä¸ä¸é€‰æ‹©ç¬¬iä¸ªa[i]
 dp[i][j]=dp[i-1][j]                 if j<a[i]
 dp[i][j]=dp[i-1][j]+dp[i][j-a[i]]   if j>=a[i]
 num: total+1
@@ -33,6 +33,6 @@ int coinExchange3(int total, int cashList[], int n, int *dp[], int num);
 
 
 /*
-¸ø¶¨Ç® x, Ó²±Ò£¨c1,c2..)£¬ÈçºÎ»»Ê¹µÄÓ²±ÒÊı×îÉÙ£¬»òÊÇÈç¹û²»ÄÜ¶Ò»»³É¹¦£¬return -1
+ç»™å®šé’± x, ç¡¬å¸ï¼ˆc1,c2..)ï¼Œå¦‚ä½•æ¢ä½¿çš„ç¡¬å¸æ•°æœ€å°‘ï¼Œæˆ–æ˜¯å¦‚æœä¸èƒ½å…‘æ¢æˆåŠŸï¼Œreturn -1
 */
 int coinExchange4(int amount, vector<int> &coins);

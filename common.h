@@ -1,28 +1,28 @@
-#pragma once
+ï»¿#pragma once
 
 #define M 2
 #define N 3
 #define K 4
 
 /*
-ÇóÁ½¸öÊıÖĞ´óµÄ
+æ±‚ä¸¤ä¸ªæ•°ä¸­å¤§çš„
 */
 int max(int a, int b);
 
 /*
-ÇóÁ½¸öÊıµÄĞ¡Õß
+æ±‚ä¸¤ä¸ªæ•°çš„å°è€…
 */
 int min(int a, int b);
 
-/*ÇóÈı¸öÊı×î´óÖµ*/
+/*æ±‚ä¸‰ä¸ªæ•°æœ€å¤§å€¼*/
 int max3(int i, int j, int k);
 
 /*
-ÊµÏÖÁ½¸ö¾ØÕóÏà³Ë
+å®ç°ä¸¤ä¸ªçŸ©é˜µç›¸ä¹˜
 */
 void maxtrixMultiply(int *a[],  int *b[]);
 
 /*
-½»»»Á½¸ö±äÁ¿
+äº¤æ¢ä¸¤ä¸ªå˜é‡
 */
 void swap(int a[], int i, int j);

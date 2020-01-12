@@ -1,12 +1,12 @@
-#include "algo_two.h"
+ï»¿#include "algo_two.h"
 #include "common.h"
 #include <iostream>
 
 /*
-100Ôª»»³É²»Í¬ÖĞµÄÁãÇ®£¬Çó»»·¨
+100å…ƒæ¢æˆä¸åŒä¸­çš„é›¶é’±ï¼Œæ±‚æ¢æ³•
 */
 /*
-±©Á¦·¨
+æš´åŠ›æ³•
 */
 int coinChange1(int amount)
 {
@@ -26,18 +26,18 @@ int coinChange1(int amount)
 /*
 amount: total money
 kinds:  the kind of money
-·ÖÎª°üº¬¸ÃÖÖÓë²»°üº¬¸ÃÖÖ£ºcoc(A, [C1, C2¡­Cn])=coc(A-C1, [C1, C2¡­Cn]) + coc(A, [C2, C3¡­Cn]);
+åˆ†ä¸ºåŒ…å«è¯¥ç§ä¸ä¸åŒ…å«è¯¥ç§ï¼šcoc(A, [C1, C2â€¦Cn])=coc(A-C1, [C1, C2â€¦Cn]) + coc(A, [C2, C3â€¦Cn]);
 */
 int coinExchangeRecursion(int amount, int cashlist[], int n)
 {
-	if (amount == 0)       //¸ºÊı
+	if (amount == 0)       //è´Ÿæ•°
 		return 1;
-	else if (amount < 0)   // 0Ôª
+	else if (amount < 0)   // 0å…ƒ
 		return 0;
-	// Ö»ÓĞÒ»ÖÖÇ®
+	// åªæœ‰ä¸€ç§é’±
 	if (n == 1)
 	{
-		if (amount % cashlist[n - 1] == 0)    //¿ÉÒÔÕûÊı
+		if (amount % cashlist[n - 1] == 0)    //å¯ä»¥æ•´æ•°
 			return 1;
 		else
 			return 0;
@@ -45,19 +45,19 @@ int coinExchangeRecursion(int amount, int cashlist[], int n)
 	return coinExchangeRecursion(amount, cashlist, n - 1) + coinExchangeRecursion(amount - cashlist[n - 1], cashlist, n);
 }
 
-int coinExchangeRecursion2(int n, int m) //µİ¹é·½Ê½ÊµÏÖ£¬¸üºÃÀí½â
+int coinExchangeRecursion2(int n, int m) //é€’å½’æ–¹å¼å®ç°ï¼Œæ›´å¥½ç†è§£
 {
-	if (n == 0)   //Ìø³öµİ¹éµÄÌõ¼ş
+	if (n == 0)   //è·³å‡ºé€’å½’çš„æ¡ä»¶
 		return 1;
 	if (n < 0 || m == 0)
 		return 0;
-	//·ÖÎªÁ½ÖÖÇé¿ö:»»È¡µ±Ç°ÃæÖµµÄÇé¿ö + Ã»ÓĞ»»È¡µ±Ç°ÃæÖµµÄÇé¿ö
+	//åˆ†ä¸ºä¸¤ç§æƒ…å†µ:æ¢å–å½“å‰é¢å€¼çš„æƒ…å†µ + æ²¡æœ‰æ¢å–å½“å‰é¢å€¼çš„æƒ…å†µ
 	return (coinExchangeRecursion2(n, (m - 1)) + coinExchangeRecursion2(n - dimes[m - 1], m));
 }
 /*
-¶¯Ì¬¹æ»®·½·¨
-dp[i][j]£ºÇ°i¸öÓ²±Ò¶Ò»»µÄÇ®ÊıÎªjÊ±µÄ×ÜµÄ×éºÏÊı
-±íÊ¾Ñ¡ÔñµÚi¸öa[i]Óë²»Ñ¡ÔñµÚi¸öa[i]
+åŠ¨æ€è§„åˆ’æ–¹æ³•
+dp[i][j]ï¼šå‰iä¸ªç¡¬å¸å…‘æ¢çš„é’±æ•°ä¸ºjæ—¶çš„æ€»çš„ç»„åˆæ•°
+è¡¨ç¤ºé€‰æ‹©ç¬¬iä¸ªa[i]ä¸ä¸é€‰æ‹©ç¬¬iä¸ªa[i]
 dp[i][j]=dp[i-1][j]                 if j<a[i]
 dp[i][j]=dp[i-1][j]+dp[i][j-a[i]]   if j>=a[i]
 num: total+1
@@ -84,19 +84,19 @@ int coinExchange3(int total, int cashList[], int n, int *dp[], int num)
 
 
 /*
-¸ø¶¨Ç®x, Ó²±Ò£¨c1,c2..)£¬Èç¹û»»Ê¹µÄÓ²±ÒÊı×îÉÙ£¬»òÊÇÈç¹û²»ÄÜ¶Ò»»³É¹¦£¬return -1
+ç»™å®šé’±x, ç¡¬å¸ï¼ˆc1,c2..)ï¼Œå¦‚æœæ¢ä½¿çš„ç¡¬å¸æ•°æœ€å°‘ï¼Œæˆ–æ˜¯å¦‚æœä¸èƒ½å…‘æ¢æˆåŠŸï¼Œreturn -1
  Write a function to compute the fewest number of coins 
  that you need to make up that amount. If that amount of 
  money cannot be made up by any combination of the coins, return -1.
- dp[i]±íÊ¾×ÜÊıÎªiµÄ×îÉÙÊıÄ¿µÄ»»Ç®·½·¨
- Ë¼Â·£º´ÓcoinsÖĞ±éÀú£¬Èç¹ûÓ²±ÒÖµĞ¡ÓÚi,ÔòÊ¹ÓÃdp[i-coins[j]+1,×î³¤Ê¹ÓÃ1ÔªµÄÓ²±ÒiÖÖ
+ dp[i]è¡¨ç¤ºæ€»æ•°ä¸ºiçš„æœ€å°‘æ•°ç›®çš„æ¢é’±æ–¹æ³•
+ æ€è·¯ï¼šä»coinsä¸­éå†ï¼Œå¦‚æœç¡¬å¸å€¼å°äºi,åˆ™ä½¿ç”¨dp[i-coins[j]+1,æœ€é•¿ä½¿ç”¨1å…ƒçš„ç¡¬å¸iç§
  dp[i]=min(dp[i],dp[i-coin[j]]+1)    
 */
 int coinExchange4(int amount, vector<int> &coins)
 {
 	if (amount == 0)
 		return 0;
-	vector<int> dp(amount + 1, amount + 1);  //´óĞ¡Îª amount+1£¬³õÊ¼ÖµÎª amount+1
+	vector<int> dp(amount + 1, amount + 1);  //å¤§å°ä¸º amount+1ï¼Œåˆå§‹å€¼ä¸º amount+1
 	dp[0] = 0;
 	for (int i = 1; i <= amount; i++)
 	{

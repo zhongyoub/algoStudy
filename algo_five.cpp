@@ -1,19 +1,19 @@
-#include "algo_five.h"
+ï»¿#include "algo_five.h"
 #include "common.h"
 
 /*
-ÔÚ1ÒÚÊıÖĞ»ñÈ¡Ç°100¸ö×î´óÖµ
-1. ¼ÙÉèÊı×éÎª array[N] (N = 1 ÒÚ)£¬Ê×ÏÈÀûÓÃquicksortµÄÔ­Àí°Ñarray·Ö³ÉÁ½¸ö²¿·Ö£¬
-×ó±ß²¿·Ö±È array[N - 1] (arrayÖĞµÄ×îºóÒ»¸öÖµ£¬¼´pivot) ´ó£¬
-ÓÒ±ß²¿·Ö±Èpivot Ğ¡¡£È»ºó£¬¿ÉÒÔµÃµ½ array[array.length - 1] (¼´ pivot) ÔÚÕû¸öÊı×éÖĞµÄÎ»ÖÃ£¬¼ÙÉèÊÇ k.
-2. Èç¹û k ±È 99 ´ó£¬ÎÒÃÇÔÚÊı×é[0, k - 1]ÀïÕÒÇ° 100 ×î´óÖµ¡£ £¨¼ÌĞøµİ¹é£©
-3. Èç¹û k ±È 99 Ğ¡£¬ ÎÒÃÇÔÚÊı×é[k + 1, ..., N ]ÀïÕÒÇ° 100 - (k + 1) ×î´óÖµ¡££¨¼ÌĞøµİ¹é£©
-4. Èç¹û k == 99, ÄÇÃ´Êı×éµÄÇ° 100 ¸öÖµÒ»¶¨ÊÇ×î´óµÄ¡££¨ÍË³ö£©
+åœ¨1äº¿æ•°ä¸­è·å–å‰100ä¸ªæœ€å¤§å€¼
+1. å‡è®¾æ•°ç»„ä¸º array[N] (N = 1 äº¿)ï¼Œé¦–å…ˆåˆ©ç”¨quicksortçš„åŸç†æŠŠarrayåˆ†æˆä¸¤ä¸ªéƒ¨åˆ†ï¼Œ
+å·¦è¾¹éƒ¨åˆ†æ¯” array[N - 1] (arrayä¸­çš„æœ€åä¸€ä¸ªå€¼ï¼Œå³pivot) å¤§ï¼Œ
+å³è¾¹éƒ¨åˆ†æ¯”pivot å°ã€‚ç„¶åï¼Œå¯ä»¥å¾—åˆ° array[array.length - 1] (å³ pivot) åœ¨æ•´ä¸ªæ•°ç»„ä¸­çš„ä½ç½®ï¼Œå‡è®¾æ˜¯ k.
+2. å¦‚æœ k æ¯” 99 å¤§ï¼Œæˆ‘ä»¬åœ¨æ•°ç»„[0, k - 1]é‡Œæ‰¾å‰ 100 æœ€å¤§å€¼ã€‚ ï¼ˆç»§ç»­é€’å½’ï¼‰
+3. å¦‚æœ k æ¯” 99 å°ï¼Œ æˆ‘ä»¬åœ¨æ•°ç»„[k + 1, ..., N ]é‡Œæ‰¾å‰ 100 - (k + 1) æœ€å¤§å€¼ã€‚ï¼ˆç»§ç»­é€’å½’ï¼‰
+4. å¦‚æœ k == 99, é‚£ä¹ˆæ•°ç»„çš„å‰ 100 ä¸ªå€¼ä¸€å®šæ˜¯æœ€å¤§çš„ã€‚ï¼ˆé€€å‡ºï¼‰
 */
 int *getFirstHundred(int a[], int start, int end, int k)
 {
 	int switchPointer = 0;
-	int pivot = a[end];  //·Ö¸îµã
+	int pivot = a[end];  //åˆ†å‰²ç‚¹
 	for (int i = start; i<=end; i++)
 	{
 		if (a[i] > pivot)
@@ -22,7 +22,7 @@ int *getFirstHundred(int a[], int start, int end, int k)
 			switchPointer++;
 		}
 	}
-	swap(a, end, switchPointer);  // ½»»»ºó array×ó±ßµÄÖµ±Èpivot´ó   ÓÒ±ßµÄÖµ±ÈpivotĞ¡
+	swap(a, end, switchPointer);  // äº¤æ¢å arrayå·¦è¾¹çš„å€¼æ¯”pivotå¤§   å³è¾¹çš„å€¼æ¯”pivotå°
 	if (switchPointer < k - 1)
 		getFirstHundred(a, switchPointer + 1, end, k);
 	else if (switchPointer == k)

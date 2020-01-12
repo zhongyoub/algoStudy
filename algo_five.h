@@ -1,7 +1,7 @@
-#pragma once
+ï»¿#pragma once
 #include <vector>
 
 /*
-ÔÚ1ÒÚÊıÖĞ»ñÈ¡Ç°100¸ö×î´óÖµ
+åœ¨1äº¿æ•°ä¸­è·å–å‰100ä¸ªæœ€å¤§å€¼
 */
 int *getFirstHundred(int a[], int start, int end, int k);

@@ -1,7 +1,7 @@
-#pragma once
+ï»¿#pragma once
 
 /*
-µ¥ÏòÁ´±í£¬»ñÈ¡µ¹ÊıµÚk¸ö½ÚµãµÄÖµ
+å•å‘é“¾è¡¨ï¼Œè·å–å€’æ•°ç¬¬kä¸ªèŠ‚ç‚¹çš„å€¼
 */
 typedef struct Node {
 	int data;

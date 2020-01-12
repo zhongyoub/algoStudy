@@ -1,11 +1,11 @@
-#include "algo_one.h"
+ï»¿#include "algo_one.h"
 #include "common.h"
 #include <iostream>
 using namespace std;
 
 
 /*
-×î´óÁ¬Ğø×ÓĞòÁĞºÍ£¬²¢Êä³ö×ÓĞòÁĞ
+æœ€å¤§è¿ç»­å­åºåˆ—å’Œï¼Œå¹¶è¾“å‡ºå­åºåˆ—
 */
 int max_sequence(int arr[], int n)
 {
@@ -33,7 +33,7 @@ int max_sequence(int arr[], int n)
 
 
 /*
-·ÖÖÎ·¨Çó½â£¬×î´óÁ¬Ğø×ÓĞòÁĞºÍÒªÃ´³öÏÖÔÚÊı×é×ó°ë²¿·Ö£¬ÒªÃ´³öÏÖÔÚÊı×éÓÒ°ë²¿·Ö£¬ÒªÃ´ºá¿ç×óÓÒÁ½°ë²¿·Ö
+åˆ†æ²»æ³•æ±‚è§£ï¼Œæœ€å¤§è¿ç»­å­åºåˆ—å’Œè¦ä¹ˆå‡ºç°åœ¨æ•°ç»„å·¦åŠéƒ¨åˆ†ï¼Œè¦ä¹ˆå‡ºç°åœ¨æ•°ç»„å³åŠéƒ¨åˆ†ï¼Œè¦ä¹ˆæ¨ªè·¨å·¦å³ä¸¤åŠéƒ¨åˆ†
 */
 int max_sequence2(int a[], int l, int r)
 {
@@ -41,7 +41,7 @@ int max_sequence2(int a[], int l, int r)
 	if (l == r) return a[l];
 	int m = (l + r) / 2;
 
-	/*Çóºá¿ç×óÓÒµÄ×î´óÁ¬Ğø×ÓĞòÁĞ×ó°ë²¿·Ö*/
+	/*æ±‚æ¨ªè·¨å·¦å³çš„æœ€å¤§è¿ç»­å­åºåˆ—å·¦åŠéƒ¨åˆ†*/
 	int lmax = a[m], lsum = 0;
 	for (int i = m; i >= l; i--) {
 		lsum += a[i];
@@ -49,26 +49,26 @@ int max_sequence2(int a[], int l, int r)
 			lmax = lsum;
 	}
 
-	/*Çóºá¿ç×óÓÒµÄ×î´óÁ¬Ğø×ÓĞòÁĞÓÒ°ë²¿·Ö*/
+	/*æ±‚æ¨ªè·¨å·¦å³çš„æœ€å¤§è¿ç»­å­åºåˆ—å³åŠéƒ¨åˆ†*/
 	int rmax = a[m + 1], rsum = 0;
 	for (int i = m + 1; i <= r; i++) {
 		rsum += a[i];
 		if (rsum > rmax)
 			rmax = rsum;
 	}
-	return max3(lmax + rmax, max_sequence2(a, l, m), max_sequence2(a, m + 1, r)); //·µ»ØÈıÕß×î´óÖµ
+	return max3(lmax + rmax, max_sequence2(a, l, m), max_sequence2(a, m + 1, r)); //è¿”å›ä¸‰è€…æœ€å¤§å€¼
 }
 
 /*
-×î´ó Á¬Ğø×ÓĞòÁĞºÍÖ»¿ÉÄÜÊÇÒÔÎ»ÖÃ0¡«n-1ÖĞÄ³¸öÎ»ÖÃ½áÎ²¡£
+æœ€å¤§ è¿ç»­å­åºåˆ—å’Œåªå¯èƒ½æ˜¯ä»¥ä½ç½®0ï½n-1ä¸­æŸä¸ªä½ç½®ç»“å°¾ã€‚
 (1)dp[i] = max{A[i], dp[i-1]+A[i]}
-(2)´Ó×óµ½ÓÒÉ¨ÃèĞòÁĞ£¬Èç¹ûtemp_sumÔö¼Ó£¬Ôòmax¸üĞÂ£¬Èç¹ûtemp_sum<0£¬¶ÔºóÃæÇóºÍÃ»ÓĞ×÷ÓÃ£¬Ôò´ÓÏÂÒ»¸ö×ÓĞòÁĞ¿ªÊ¼
+(2)ä»å·¦åˆ°å³æ‰«æåºåˆ—ï¼Œå¦‚æœtemp_sumå¢åŠ ï¼Œåˆ™maxæ›´æ–°ï¼Œå¦‚æœtemp_sum<0ï¼Œå¯¹åé¢æ±‚å’Œæ²¡æœ‰ä½œç”¨ï¼Œåˆ™ä»ä¸‹ä¸€ä¸ªå­åºåˆ—å¼€å§‹
 */
 int max_sequence3(int a[], int n)
 {
 	/*
 	int maxsum, maxhere;
-	maxsum = maxhere = a[0];   //³õÊ¼»¯×î´óºÍa[0]
+	maxsum = maxhere = a[0];   //åˆå§‹åŒ–æœ€å¤§å’Œa[0]
 	for (int i = 1; i < n; i++)
 	{
 		if (maxhere <= 0)
