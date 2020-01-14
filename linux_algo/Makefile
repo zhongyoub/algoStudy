@@ -1,4 +1,4 @@
-include ../makefile.defines
+include ../../makefile.defines
 
 SOURCES=$(wildcard *.c *.cpp)
 OBJS=$(patsubst %.cpp,%.o, $(patsubst %.c,%.o,$(SOURCES)))

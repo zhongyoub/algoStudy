@@ -73,8 +73,6 @@ int change2(int *a, int n)
     int count=0;
     if(n<=2)
         return 0;
-    
-    int mid=n/2;
 
     /*
     for(int i=1, j=n-2; i<=n/2,j>=n/2;i++,j--)

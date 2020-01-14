@@ -12,3 +12,5 @@ typedef struct Node {
 int getTailk1(LinkList head, int k);
 
 int getTailk2(LinkList head, int k);
+
+#endif 

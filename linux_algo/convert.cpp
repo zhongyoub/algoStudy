@@ -1,9 +1,5 @@
 /*
 进制转换：将一个整数转化为给定的进制表示，
-如：12345(10)=30071(8)
-假设n=(d_m...d_2d_1d_0)(x)=d_m * x^m + ... + d_2 * x^2 +d_1 * x^1 +d_0 * x^0
- 
-
 */
 
 #include <iostream>
@@ -13,6 +9,9 @@
 
 using namespace std;
 
+/*
+递归实现
+*/
 void convert(stack<char>& s, int n, int base)
 {
     static char digit[]={'0','1','2','3','4','5','6','7','9'};
@@ -23,4 +22,28 @@ void convert(stack<char>& s, int n, int base)
     }
 }
 
+/*
+迭代实现
+*/
+void convert1(stack<int>& s, int n, int base)
+{
+    while(n)
+    {
+        s.push(n%base);
+        n/=base;
+    }
+}
 
+int main()
+{
+    stack<char> s;
+    convert(s,10241,16);
+    int len=s.size();
+    for(int i=0; i<len; i++)
+    {
+        cout<<s.top();
+        s.pop();
+    }
+    cout<<endl;
+    return 0;
+}

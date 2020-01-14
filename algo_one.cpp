@@ -1,5 +1,5 @@
 ﻿#include "algo_one.h"
-#include "common.h"
+#include "common.cpp"
 #include <iostream>
 using namespace std;
 
