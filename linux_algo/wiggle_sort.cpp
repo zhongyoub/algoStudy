@@ -142,7 +142,7 @@ void wiggleSort(vector<int>& nums) {
 
 int main()
 {
-//    vector<int>vc
+    vector<int>vc;
     int n, count;
     cout << "请输入数组的数目" << endl;
     cin >> n;
@@ -156,11 +156,11 @@ int main()
     {
         cin>>array[i];
     }
-//    vc.insert(vc.begin(), array, array+n)
-//    count = wiggleSort1(vc);
- //   cout<<count<<endl;
+    vc.insert(vc.begin(), array, array+n);
+    count = wiggleSort1(vc);
+    cout<<count<<endl;
     for (int i = 0; i < vc.size(); i++)
-        cout << array[i] << endl;
+        cout << vc[i]<< endl;
 
     return 0;
 }
