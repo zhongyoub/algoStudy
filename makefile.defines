@@ -1,0 +1,7 @@
+cc = gcc
+ccc = g++
+export open_o2=-o2
+CFLAGS = -g -pg -O2 -fPIC -Wall
+LIBS =  -lpthread -lm
+LIBS += -lMESA_prof_load -lMESA_htable
+TEMPFILES=core core.* *.o temp.* *.out

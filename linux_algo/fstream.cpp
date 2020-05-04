@@ -22,7 +22,7 @@ string trim(string &str)
 int strtoint(string str)
 {
     int num=0;
-    for(int i=0;i<str.length;i++)
+    for(int i=0;i<str.length();i++)
     {
         num=num*10+str[0]-'0';
     }
