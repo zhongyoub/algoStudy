@@ -153,3 +153,25 @@ int main()
 	cout<<endl;
 	return 0;
 }
+
+
+
+/*
+每个桶中10条，20个桶取180条
+f(i,j)=sum(f(i-1,j-k), 0<=k<=10)
+*/
+int dp[21][200];   //前i个桶取j条鱼的方法数
+int allocate(int bucketN, int fishN)
+{
+	for(int i=0;i<=10;i++)
+		dp[1][i]=1;
+	for(int i=2;i<=bucketN;i++)
+	{
+		for(int j=0;j<=fishN;j++)
+		{
+			for(int k=0;k<=10;k++)
+				dp[i][j]+=dp[i-1][j-k];
+		}
+	}
+	return dp[bucketN][fishN];
+}
