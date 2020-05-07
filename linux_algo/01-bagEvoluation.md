@@ -10,6 +10,7 @@
 
 
 ## 第一个问题——0-1背包问题
+### 使用二维数组解
   该问题更抽象的概括为：
   给定正整数{(W<sub>i</sub>, v<sub>i</sub>)}<sub>1$\leq$i$\leq$n</sub>，给定正整数C,求解0-1规划问题:
 
@@ -44,10 +45,17 @@ for i=1 to n <br>
 &nbsp; &nbsp; &nbsp; &nbsp; m[i,W]=m[i-1,W] <br>
 &nbsp; &nbsp; else   <br>
 &nbsp; &nbsp;&nbsp; m[i,W]=max{m[i-1,W], $v_{i}$+m[i-1,W-$w_{i}$} <br>
-return m[n,C]
-  
+return m[n, C]
+<br>
+
+### 使用一维数组解
+
+
+
+
 ## 第二个问题
 给定N个数，取若干个数，和最接近M。 可以将M看为背包的容量,每单位重量对应每单位价值 <br>
+
 
 m(i, M)记作在前i个数取得和不超过M。 <br>
 考虑第i个数，分为两种情况，取与不取 <br>

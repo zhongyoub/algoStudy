@@ -141,3 +141,7 @@ ListNode* checkEntrance(ListNode* head)
 }
 
 
+int main()
+{
+    return 0;
+}
