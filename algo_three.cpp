@@ -81,7 +81,7 @@ int getMaxmoutian2(int A[], int n)
 		{
 			tag_less = 0;
 			tag_more = 0;
-			maxLen = max(maxLen, fast - slow);
+			maxLen = max(maxLen, fast - slow);     //fast-slow不包含最后的fast
 			slow = fast - 1;
 		}
 		else {//不符合山脉的要求
