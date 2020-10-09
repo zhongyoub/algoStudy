@@ -87,7 +87,8 @@ bool isPalin3(int x)
 }
 
 bool isPalindrome(int x) {//十进制
-        if(x<0)return 0;
+        if(x<0)
+            return 0;
         int num=1,len=1;
         while(x/num>=10){
             num*=10;

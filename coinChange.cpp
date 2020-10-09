@@ -1,3 +1,6 @@
+/*
+给定一些可用的硬币值，如1，2，5，19，又给了一个钱数，最少用几个硬币换算
+*/
 #include<iomanip>
 #include<iostream>
 using namespace std;
@@ -35,9 +38,12 @@ int cc(int money, int coin_type, int lr)
 		vala = cc(money, coin_type - 1, 0);
 		valb = cc(money - coin_value[coin_type-1], coin_type, 1);
 		val = vala + valb;
-		if (vala == 0) coin_count[coin_type] += valb;
-		else           coin_count[coin_type] = valb;
-		if (money >= 0)matrix[money * 4 + coin_type] = val;
+		if (vala == 0) 
+			coin_count[coin_type] += valb;
+		else           
+			coin_count[coin_type] = valb;
+		if (money >= 0)
+			matrix[money * 4 + coin_type] = val;
 	}
 
 	//    cout<<"("<< setw(4) <<money<<","<< setw(4) <<coin_value[coin_type]<<", ";
