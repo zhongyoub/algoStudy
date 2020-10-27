@@ -1,0 +1,1660 @@
+desc: (none)
+cmd: ls -al
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=434697
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=442633
+mem_heap_B=21
+mem_heap_extra_B=27
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=449123
+mem_heap_B=2552
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=456720
+mem_heap_B=7232
+mem_heap_extra_B=312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=465349
+mem_heap_B=8832
+mem_heap_extra_B=320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=465474
+mem_heap_B=9856
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=486073
+mem_heap_B=10880
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=489506
+mem_heap_B=6296
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=505121
+mem_heap_B=6301
+mem_heap_extra_B=323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=510060
+mem_heap_B=6839
+mem_heap_extra_B=497
+mem_stacks_B=0
+heap_tree=detailed
+n8: 6839 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n2: 336 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n2: 232 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n2: 160 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+    n1: 112 0x5696FEA: _nl_find_locale (findlocale.c:217)
+     n1: 112 0x569644A: setlocale (setlocale.c:340)
+      n1: 112 0x4029F0: ??? (in /usr/bin/ls)
+       n0: 112 0x568C045: (below main) (libc-start.c:308)
+    n0: 48 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+  n1: 104 0x5696FEA: _nl_find_locale (findlocale.c:217)
+   n1: 104 0x569644A: setlocale (setlocale.c:340)
+    n1: 104 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 104 0x568C045: (below main) (libc-start.c:308)
+ n2: 202 0x569CE8F: _nl_make_l10nflist (l10nflist.c:166)
+  n2: 161 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n1: 90 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+    n0: 90 in 2 places, all below massif's threshold (1.00%)
+   n0: 71 in 1 place, below massif's threshold (1.00%)
+  n0: 41 in 2 places, all below massif's threshold (1.00%)
+ n2: 136 0x56F1488: strdup (strdup.c:42)
+  n1: 108 0x569649C: setlocale (setlocale.c:369)
+   n1: 108 0x4029F0: ??? (in /usr/bin/ls)
+    n0: 108 0x568C045: (below main) (libc-start.c:308)
+  n0: 28 in 2 places, all below massif's threshold (1.00%)
+ n1: 120 0x56978A4: _nl_load_locale_from_archive (loadarchive.c:460)
+  n1: 120 0x5696B03: _nl_find_locale (findlocale.c:153)
+   n1: 120 0x569644A: setlocale (setlocale.c:340)
+    n1: 120 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 120 0x568C045: (below main) (libc-start.c:308)
+ n0: 5 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=516804
+mem_heap_B=7109
+mem_heap_extra_B=571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=522301
+mem_heap_B=7040
+mem_heap_extra_B=480
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=537423
+mem_heap_B=7096
+mem_heap_extra_B=496
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=538745
+mem_heap_B=7152
+mem_heap_extra_B=512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=554598
+mem_heap_B=26352
+mem_heap_extra_B=520
+mem_stacks_B=0
+heap_tree=detailed
+n7: 26352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 19312 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n0: 112 in 1 place, below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n2: 536 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n1: 432 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n0: 432 in 2 places, all below massif's threshold (1.00%)
+  n0: 104 in 1 place, below massif's threshold (1.00%)
+ n1: 272 0x569CE8F: _nl_make_l10nflist (l10nflist.c:166)
+  n0: 272 in 3 places, all below massif's threshold (1.00%)
+ n0: 192 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=556300
+mem_heap_B=59202
+mem_heap_extra_B=558
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=574995
+mem_heap_B=59458
+mem_heap_extra_B=566
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=578586
+mem_heap_B=59239
+mem_heap_extra_B=577
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=591459
+mem_heap_B=60263
+mem_heap_extra_B=585
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=598199
+mem_heap_B=65006
+mem_heap_extra_B=650
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=606673
+mem_heap_B=66161
+mem_heap_extra_B=1119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=611169
+mem_heap_B=62052
+mem_heap_extra_B=1324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=616788
+mem_heap_B=62077
+mem_heap_extra_B=1339
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=624353
+mem_heap_B=63520
+mem_heap_extra_B=1400
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=704891
+mem_heap_B=64008
+mem_heap_extra_B=1416
+mem_stacks_B=0
+heap_tree=detailed
+n9: 64008 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x5729F41: __alloc_dir (opendir.c:118)
+  n1: 32816 0x572A044: opendir_tail (opendir.c:69)
+   n1: 32816 0x403005: ??? (in /usr/bin/ls)
+    n0: 32816 0x568C045: (below main) (libc-start.c:308)
+ n2: 19346 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n0: 146 in 2 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n0: 2241 in 19 places, all below massif's threshold (1.00%)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+#-----------
+snapshot=26
+#-----------
+time=713225
+mem_heap_B=69189
+mem_heap_extra_B=1475
+mem_stacks_B=0
+heap_tree=peak
+n11: 69189 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x5729F41: __alloc_dir (opendir.c:118)
+  n1: 32816 0x572A044: opendir_tail (opendir.c:69)
+   n1: 32816 0x403005: ??? (in /usr/bin/ls)
+    n0: 32816 0x568C045: (below main) (libc-start.c:308)
+ n2: 19367 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n0: 167 in 3 places, all below massif's threshold (1.00%)
+ n1: 4096 0x56D7257: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x56E6177: _IO_doallocbuf (genops.c:347)
+   n2: 4096 0x56E506A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:490)
+    n2: 4096 0x56E285B: __libc_readline_unlocked (readline.c:44)
+     n1: 4096 0xC993FAC: ???
+      n1: 4096 0xC9943B2: ???
+       n1: 4096 0x572BEB7: getgrgid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:315)
+        n1: 4096 0x572B486: getgrgid (getXXbyYY.c:135)
+         n1: 4096 0x40D33C: ??? (in /usr/bin/ls)
+          n1: 4096 0x409336: ??? (in /usr/bin/ls)
+           n1: 4096 0x404035: ??? (in /usr/bin/ls)
+            n0: 4096 0x568C045: (below main) (libc-start.c:308)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n0: 2281 in 18 places, all below massif's threshold (1.00%)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+#-----------
+snapshot=27
+#-----------
+time=718438
+mem_heap_B=64961
+mem_heap_extra_B=1559
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=722818
+mem_heap_B=64757
+mem_heap_extra_B=1603
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=728626
+mem_heap_B=64859
+mem_heap_extra_B=1661
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=734430
+mem_heap_B=64959
+mem_heap_extra_B=1721
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=737357
+mem_heap_B=65010
+mem_heap_extra_B=1750
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=743147
+mem_heap_B=65109
+mem_heap_extra_B=1827
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=747415
+mem_heap_B=65450
+mem_heap_extra_B=1886
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=753089
+mem_heap_B=65515
+mem_heap_extra_B=1925
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=759041
+mem_heap_B=65654
+mem_heap_extra_B=2002
+mem_stacks_B=0
+heap_tree=detailed
+n10: 65654 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x5729F41: __alloc_dir (opendir.c:118)
+  n1: 32816 0x572A044: opendir_tail (opendir.c:69)
+   n1: 32816 0x403005: ??? (in /usr/bin/ls)
+    n0: 32816 0x568C045: (below main) (libc-start.c:308)
+ n2: 19568 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n0: 368 in 4 places, all below massif's threshold (1.00%)
+ n0: 2641 in 19 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+#-----------
+snapshot=36
+#-----------
+time=766387
+mem_heap_B=65511
+mem_heap_extra_B=2065
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=772133
+mem_heap_B=65605
+mem_heap_extra_B=2131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=775043
+mem_heap_B=65653
+mem_heap_extra_B=2163
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=780804
+mem_heap_B=65756
+mem_heap_extra_B=2236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=788670
+mem_heap_B=33056
+mem_heap_extra_B=2320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=801199
+mem_heap_B=34704
+mem_heap_extra_B=2336
+mem_stacks_B=0
+heap_tree=detailed
+n12: 34704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 20333 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 624 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 624 0x403F08: ??? (in /usr/bin/ls)
+    n0: 624 0x568C045: (below main) (libc-start.c:308)
+  n1: 435 0x4117C2: ??? (in /usr/bin/ls)
+   n0: 435 in 3 places, all below massif's threshold (1.00%)
+  n0: 74 in 3 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n0: 1182 in 17 places, all below massif's threshold (1.00%)
+ n1: 1024 0x56D7257: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 1024 0x56E6177: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x56E5386: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:749)
+    n1: 1024 0x56E445D: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1248)
+     n1: 1024 0x56E2EAA: fputs_unlocked (iofputs_u.c:37)
+      n1: 1024 0x403F61: ??? (in /usr/bin/ls)
+       n0: 1024 0x568C045: (below main) (libc-start.c:308)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n2: 1000 0x56F1488: strdup (strdup.c:42)
+  n1: 962 0x504EDBE: selinux_raw_to_trans_context (in /usr/lib64/libselinux.so.1)
+   n1: 962 0x5048D18: lgetfilecon (in /usr/lib64/libselinux.so.1)
+    n1: 962 0x412267: ??? (in /usr/bin/ls)
+     n1: 962 0x408BFB: ??? (in /usr/bin/ls)
+      n1: 962 0x404035: ??? (in /usr/bin/ls)
+       n0: 962 0x568C045: (below main) (libc-start.c:308)
+  n0: 38 in 4 places, all below massif's threshold (1.00%)
+ n2: 536 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n1: 432 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n0: 432 in 2 places, all below massif's threshold (1.00%)
+  n0: 104 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=810186
+mem_heap_B=34719
+mem_heap_extra_B=2345
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=813700
+mem_heap_B=34974
+mem_heap_extra_B=2426
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=826521
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=833426
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=841718
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=detailed
+n12: 34959 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 20333 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 624 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 624 0x403F08: ??? (in /usr/bin/ls)
+    n0: 624 0x568C045: (below main) (libc-start.c:308)
+  n1: 435 0x4117C2: ??? (in /usr/bin/ls)
+   n0: 435 in 3 places, all below massif's threshold (1.00%)
+  n0: 74 in 3 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n0: 1437 in 20 places, all below massif's threshold (1.00%)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x56D7257: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 1024 0x56E6177: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x56E5386: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:749)
+    n1: 1024 0x56E445D: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1248)
+     n1: 1024 0x56E2EAA: fputs_unlocked (iofputs_u.c:37)
+      n1: 1024 0x403F61: ??? (in /usr/bin/ls)
+       n0: 1024 0x568C045: (below main) (libc-start.c:308)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n2: 1000 0x56F1488: strdup (strdup.c:42)
+  n1: 962 0x504EDBE: selinux_raw_to_trans_context (in /usr/lib64/libselinux.so.1)
+   n1: 962 0x5048D18: lgetfilecon (in /usr/lib64/libselinux.so.1)
+    n1: 962 0x412267: ??? (in /usr/bin/ls)
+     n1: 962 0x408BFB: ??? (in /usr/bin/ls)
+      n1: 962 0x404035: ??? (in /usr/bin/ls)
+       n0: 962 0x568C045: (below main) (libc-start.c:308)
+  n0: 38 in 5 places, all below massif's threshold (1.00%)
+ n2: 536 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n1: 432 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n0: 432 in 2 places, all below massif's threshold (1.00%)
+  n0: 104 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=848980
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=856403
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=863916
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=871358
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=878736
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=886173
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=893551
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=900948
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=908281
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=915794
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=detailed
+n12: 34959 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 20333 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 624 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 624 0x403F08: ??? (in /usr/bin/ls)
+    n0: 624 0x568C045: (below main) (libc-start.c:308)
+  n1: 435 0x4117C2: ??? (in /usr/bin/ls)
+   n0: 435 in 3 places, all below massif's threshold (1.00%)
+  n0: 74 in 3 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n0: 1437 in 20 places, all below massif's threshold (1.00%)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x56D7257: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 1024 0x56E6177: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x56E5386: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:749)
+    n1: 1024 0x56E445D: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1248)
+     n1: 1024 0x56E2EAA: fputs_unlocked (iofputs_u.c:37)
+      n1: 1024 0x403F61: ??? (in /usr/bin/ls)
+       n0: 1024 0x568C045: (below main) (libc-start.c:308)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n2: 1000 0x56F1488: strdup (strdup.c:42)
+  n1: 962 0x504EDBE: selinux_raw_to_trans_context (in /usr/lib64/libselinux.so.1)
+   n1: 962 0x5048D18: lgetfilecon (in /usr/lib64/libselinux.so.1)
+    n1: 962 0x412267: ??? (in /usr/bin/ls)
+     n1: 962 0x408BFB: ??? (in /usr/bin/ls)
+      n1: 962 0x404035: ??? (in /usr/bin/ls)
+       n0: 962 0x568C045: (below main) (libc-start.c:308)
+  n0: 38 in 5 places, all below massif's threshold (1.00%)
+ n2: 536 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n1: 432 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n0: 432 in 2 places, all below massif's threshold (1.00%)
+  n0: 104 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=923217
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=930665
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=938088
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=945463
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=952841
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=960630
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=968069
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=975376
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=982621
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=989859
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=detailed
+n12: 34959 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 20333 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 624 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 624 0x403F08: ??? (in /usr/bin/ls)
+    n0: 624 0x568C045: (below main) (libc-start.c:308)
+  n1: 435 0x4117C2: ??? (in /usr/bin/ls)
+   n0: 435 in 3 places, all below massif's threshold (1.00%)
+  n0: 74 in 3 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n0: 1437 in 20 places, all below massif's threshold (1.00%)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x56D7257: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 1024 0x56E6177: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x56E5386: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:749)
+    n1: 1024 0x56E445D: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1248)
+     n1: 1024 0x56E2EAA: fputs_unlocked (iofputs_u.c:37)
+      n1: 1024 0x403F61: ??? (in /usr/bin/ls)
+       n0: 1024 0x568C045: (below main) (libc-start.c:308)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n2: 1000 0x56F1488: strdup (strdup.c:42)
+  n1: 962 0x504EDBE: selinux_raw_to_trans_context (in /usr/lib64/libselinux.so.1)
+   n1: 962 0x5048D18: lgetfilecon (in /usr/lib64/libselinux.so.1)
+    n1: 962 0x412267: ??? (in /usr/bin/ls)
+     n1: 962 0x408BFB: ??? (in /usr/bin/ls)
+      n1: 962 0x404035: ??? (in /usr/bin/ls)
+       n0: 962 0x568C045: (below main) (libc-start.c:308)
+  n0: 38 in 5 places, all below massif's threshold (1.00%)
+ n2: 536 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n1: 432 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n0: 432 in 2 places, all below massif's threshold (1.00%)
+  n0: 104 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=997486
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1005045
+mem_heap_B=34959
+mem_heap_extra_B=2417
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1009326
+mem_heap_B=34972
+mem_heap_extra_B=2404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1018174
+mem_heap_B=33916
+mem_heap_extra_B=2388
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1023104
+mem_heap_B=33900
+mem_heap_extra_B=2380
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1033957
+mem_heap_B=33870
+mem_heap_extra_B=2370
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1034091
+mem_heap_B=33671
+mem_heap_extra_B=2297
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1034225
+mem_heap_B=33427
+mem_heap_extra_B=2237
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1034359
+mem_heap_B=33258
+mem_heap_extra_B=2182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=1034677
+mem_heap_B=33080
+mem_heap_extra_B=2120
+mem_stacks_B=0
+heap_tree=detailed
+n11: 33080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 20299 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 624 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 624 0x403F08: ??? (in /usr/bin/ls)
+    n0: 624 0x568C045: (below main) (libc-start.c:308)
+  n1: 433 0x4117C2: ??? (in /usr/bin/ls)
+   n0: 433 in 3 places, all below massif's threshold (1.00%)
+  n0: 42 in 3 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 1347 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 1347 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 1347 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 1347 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 1347 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 1347 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 1347 0x408583: ??? (in /usr/bin/ls)
+        n1: 1347 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 1347 0x404035: ??? (in /usr/bin/ls)
+          n0: 1347 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n2: 987 0x56F1488: strdup (strdup.c:42)
+  n1: 962 0x504EDBE: selinux_raw_to_trans_context (in /usr/lib64/libselinux.so.1)
+   n1: 962 0x5048D18: lgetfilecon (in /usr/lib64/libselinux.so.1)
+    n1: 962 0x412267: ??? (in /usr/bin/ls)
+     n1: 962 0x408BFB: ??? (in /usr/bin/ls)
+      n1: 962 0x404035: ??? (in /usr/bin/ls)
+       n0: 962 0x568C045: (below main) (libc-start.c:308)
+  n0: 25 in 5 places, all below massif's threshold (1.00%)
+ n0: 803 in 21 places, all below massif's threshold (1.00%)
+ n1: 362 0x577FB4E: __nss_database_lookup2 (nsswitch.c:779)
+  n1: 362 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+   n1: 362 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+    n1: 362 0x572D6A6: getpwuid (getXXbyYY.c:135)
+     n1: 362 0x40D19C: ??? (in /usr/bin/ls)
+      n1: 362 0x408583: ??? (in /usr/bin/ls)
+       n1: 362 0x4092AF: ??? (in /usr/bin/ls)
+        n1: 362 0x404035: ??? (in /usr/bin/ls)
+         n0: 362 0x568C045: (below main) (libc-start.c:308)
+#-----------
+snapshot=77
+#-----------
+time=1034803
+mem_heap_B=31976
+mem_heap_extra_B=2080
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=1034966
+mem_heap_B=31232
+mem_heap_extra_B=2024
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=1035126
+mem_heap_B=30688
+mem_heap_extra_B=1976
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=1035307
+mem_heap_B=30534
+mem_heap_extra_B=1938
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=1035576
+mem_heap_B=30504
+mem_heap_extra_B=1904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=1035975
+mem_heap_B=30433
+mem_heap_extra_B=1847
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=1036109
+mem_heap_B=30280
+mem_heap_extra_B=1776
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=1036275
+mem_heap_B=30135
+mem_heap_extra_B=1713
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=1036409
+mem_heap_B=29983
+mem_heap_extra_B=1641
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=1036557
+mem_heap_B=29796
+mem_heap_extra_B=1572
+mem_stacks_B=0
+heap_tree=detailed
+n9: 29796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 20299 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 624 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 624 0x403F08: ??? (in /usr/bin/ls)
+    n0: 624 0x568C045: (below main) (libc-start.c:308)
+  n2: 433 0x4117C2: ??? (in /usr/bin/ls)
+   n1: 321 0x408920: ??? (in /usr/bin/ls)
+    n1: 321 0x404035: ??? (in /usr/bin/ls)
+     n0: 321 0x568C045: (below main) (libc-start.c:308)
+   n0: 112 in 2 places, all below massif's threshold (1.00%)
+  n0: 42 in 3 places, all below massif's threshold (1.00%)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 1194 0x400ADBF: _dl_new_object (dl-object.c:73)
+  n1: 1194 0x4005923: _dl_map_object_from_fd (dl-load.c:986)
+   n1: 1194 0x40085DD: _dl_map_object (dl-load.c:2225)
+    n1: 1194 0x4012AA9: dl_open_worker (dl-open.c:217)
+     n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 1194 0x4012678: _dl_open (dl-open.c:592)
+       n1: 1194 0x579616B: do_dlopen (dl-libc.c:96)
+        n1: 1194 0x5796B5A: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 1194 0x5796BCD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 1194 0x5796235: dlerror_run (dl-libc.c:46)
+           n1: 1194 0x57962C5: __libc_dlopen_mode (dl-libc.c:195)
+            n1: 1194 0x577F62E: nss_load_library (nsswitch.c:359)
+             n1: 1194 0x577FE36: __nss_lookup_function (nsswitch.c:456)
+              n1: 1194 0x577FF8A: __nss_lookup (nsswitch.c:198)
+               n1: 1194 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+                n1: 1194 0x572D6A6: getpwuid (getXXbyYY.c:135)
+                 n1: 1194 0x40D19C: ??? (in /usr/bin/ls)
+                  n1: 1194 0x408583: ??? (in /usr/bin/ls)
+                   n1: 1194 0x4092AF: ??? (in /usr/bin/ls)
+                    n1: 1194 0x404035: ??? (in /usr/bin/ls)
+                     n0: 1194 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n2: 962 0x56F1488: strdup (strdup.c:42)
+  n1: 962 0x504EDBE: selinux_raw_to_trans_context (in /usr/lib64/libselinux.so.1)
+   n1: 962 0x5048D18: lgetfilecon (in /usr/lib64/libselinux.so.1)
+    n1: 962 0x412267: ??? (in /usr/bin/ls)
+     n1: 962 0x408BFB: ??? (in /usr/bin/ls)
+      n1: 962 0x404035: ??? (in /usr/bin/ls)
+       n0: 962 0x568C045: (below main) (libc-start.c:308)
+  n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 864 0x577F1A4: nss_parse_service_list (nsswitch.c:630)
+  n1: 864 0x577FB75: __nss_database_lookup2 (nsswitch.c:787)
+   n1: 864 0x57811DA: __nss_passwd_lookup2 (XXX-lookup.c:60)
+    n1: 864 0x572E0E9: getpwuid_r@@GLIBC_2.2.5 (getXXbyYY_r.c:269)
+     n1: 864 0x572D6A6: getpwuid (getXXbyYY.c:135)
+      n1: 864 0x40D19C: ??? (in /usr/bin/ls)
+       n1: 864 0x408583: ??? (in /usr/bin/ls)
+        n1: 864 0x4092AF: ??? (in /usr/bin/ls)
+         n1: 864 0x404035: ??? (in /usr/bin/ls)
+          n0: 864 0x568C045: (below main) (libc-start.c:308)
+ n0: 781 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=87
+#-----------
+time=1036709
+mem_heap_B=29605
+mem_heap_extra_B=1507
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=1036857
+mem_heap_B=29449
+mem_heap_extra_B=1439
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=1037005
+mem_heap_B=29290
+mem_heap_extra_B=1374
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=1037149
+mem_heap_B=29139
+mem_heap_extra_B=1301
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=91
+#-----------
+time=1037301
+mem_heap_B=28952
+mem_heap_extra_B=1232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=92
+#-----------
+time=1037445
+mem_heap_B=28794
+mem_heap_extra_B=1166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=93
+#-----------
+time=1039509
+mem_heap_B=28492
+mem_heap_extra_B=1100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=94
+#-----------
+time=1039706
+mem_heap_B=27192
+mem_heap_extra_B=1040
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=95
+#-----------
+time=1039840
+mem_heap_B=27152
+mem_heap_extra_B=1016
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=96
+#-----------
+time=1040454
+mem_heap_B=25552
+mem_heap_extra_B=1008
+mem_stacks_B=0
+heap_tree=detailed
+n6: 25552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 20299 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 624 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 624 0x403F08: ??? (in /usr/bin/ls)
+    n0: 624 0x568C045: (below main) (libc-start.c:308)
+  n2: 433 0x4117C2: ??? (in /usr/bin/ls)
+   n1: 321 0x408920: ??? (in /usr/bin/ls)
+    n1: 321 0x404035: ??? (in /usr/bin/ls)
+     n0: 321 0x568C045: (below main) (libc-start.c:308)
+   n0: 112 in 2 places, all below massif's threshold (1.00%)
+  n0: 42 in 3 places, all below massif's threshold (1.00%)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572B538: getgrgid (getXXbyYY.c:121)
+  n1: 1024 0x40D33C: ??? (in /usr/bin/ls)
+   n1: 1024 0x409336: ??? (in /usr/bin/ls)
+    n1: 1024 0x404035: ??? (in /usr/bin/ls)
+     n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n1: 1024 0x572D758: getpwuid (getXXbyYY.c:121)
+  n1: 1024 0x40D19C: ??? (in /usr/bin/ls)
+   n1: 1024 0x408583: ??? (in /usr/bin/ls)
+    n1: 1024 0x4092AF: ??? (in /usr/bin/ls)
+     n1: 1024 0x404035: ??? (in /usr/bin/ls)
+      n0: 1024 0x568C045: (below main) (libc-start.c:308)
+ n2: 962 0x56F1488: strdup (strdup.c:42)
+  n1: 962 0x504EDBE: selinux_raw_to_trans_context (in /usr/lib64/libselinux.so.1)
+   n1: 962 0x5048D18: lgetfilecon (in /usr/lib64/libselinux.so.1)
+    n1: 962 0x412267: ??? (in /usr/bin/ls)
+     n1: 962 0x408BFB: ??? (in /usr/bin/ls)
+      n1: 962 0x404035: ??? (in /usr/bin/ls)
+       n0: 962 0x568C045: (below main) (libc-start.c:308)
+  n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n0: 195 in 26 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=97
+#-----------
+time=1040583
+mem_heap_B=23309
+mem_heap_extra_B=979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=98
+#-----------
+time=1040775
+mem_heap_B=21261
+mem_heap_extra_B=963
+mem_stacks_B=0
+heap_tree=empty

@@ -1,0 +1,977 @@
+desc: (none)
+cmd: ls
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=434697
+mem_heap_B=16
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=442633
+mem_heap_B=21
+mem_heap_extra_B=27
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=443530
+mem_heap_B=924
+mem_heap_extra_B=52
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=445639
+mem_heap_B=1036
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=446376
+mem_heap_B=1684
+mem_heap_extra_B=84
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=447371
+mem_heap_B=1788
+mem_heap_extra_B=100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=448328
+mem_heap_B=2268
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=449119
+mem_heap_B=2552
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=449878
+mem_heap_B=2564
+mem_heap_extra_B=204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=450637
+mem_heap_B=2576
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=451396
+mem_heap_B=2588
+mem_heap_extra_B=228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=452155
+mem_heap_B=2600
+mem_heap_extra_B=240
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=452914
+mem_heap_B=2612
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2612 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 120 0x56978A4: _nl_load_locale_from_archive (loadarchive.c:460)
+  n1: 120 0x5696B03: _nl_find_locale (findlocale.c:153)
+   n1: 120 0x569644A: setlocale (setlocale.c:340)
+    n1: 120 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 120 0x568C045: (below main) (libc-start.c:308)
+ n2: 100 0x56F1488: strdup (strdup.c:42)
+  n1: 72 0x569649C: setlocale (setlocale.c:369)
+   n1: 72 0x4029F0: ??? (in /usr/bin/ls)
+    n0: 72 0x568C045: (below main) (libc-start.c:308)
+  n0: 28 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=453676
+mem_heap_B=2624
+mem_heap_extra_B=264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=454435
+mem_heap_B=2636
+mem_heap_extra_B=276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=455194
+mem_heap_B=2648
+mem_heap_extra_B=288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=456103
+mem_heap_B=3136
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=456716
+mem_heap_B=7232
+mem_heap_extra_B=312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=465366
+mem_heap_B=8832
+mem_heap_extra_B=320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=465491
+mem_heap_B=9856
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=486094
+mem_heap_B=10880
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=489400
+mem_heap_B=10880
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=detailed
+n8: 10880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x56D7257: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x56E6177: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x56E506A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:490)
+    n1: 4096 0x56E61F0: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x56D8F10: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x56E2DE1: fgets_unlocked (iofgets_u.c:52)
+       n1: 4096 0x569C6C6: read_alias_file (localealias.c:258)
+        n1: 4096 0x569CBB2: _nl_expand_alias (localealias.c:198)
+         n1: 4096 0x5696E36: _nl_find_locale (findlocale.c:160)
+          n1: 4096 0x569644A: setlocale (setlocale.c:340)
+           n1: 4096 0x4029F0: ??? (in /usr/bin/ls)
+            n0: 4096 0x568C045: (below main) (libc-start.c:308)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 488 0x56D7E09: __fopen_internal (iofopen.c:65)
+  n1: 488 0x569C680: read_alias_file (localealias.c:229)
+   n1: 488 0x569CBB2: _nl_expand_alias (localealias.c:198)
+    n1: 488 0x5696E36: _nl_find_locale (findlocale.c:160)
+     n1: 488 0x569644A: setlocale (setlocale.c:340)
+      n1: 488 0x4029F0: ??? (in /usr/bin/ls)
+       n0: 488 0x568C045: (below main) (libc-start.c:308)
+ n1: 136 0x56F1488: strdup (strdup.c:42)
+  n0: 136 in 3 places, all below massif's threshold (1.00%)
+ n1: 120 0x56978A4: _nl_load_locale_from_archive (loadarchive.c:460)
+  n1: 120 0x5696B03: _nl_find_locale (findlocale.c:153)
+   n1: 120 0x569644A: setlocale (setlocale.c:340)
+    n1: 120 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 120 0x568C045: (below main) (libc-start.c:308)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=489527
+mem_heap_B=6296
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=505142
+mem_heap_B=6301
+mem_heap_extra_B=323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=505901
+mem_heap_B=6342
+mem_heap_extra_B=338
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=506490
+mem_heap_B=6482
+mem_heap_extra_B=374
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=507598
+mem_heap_B=6667
+mem_heap_extra_B=429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=508924
+mem_heap_B=6831
+mem_heap_extra_B=489
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=509977
+mem_heap_B=6839
+mem_heap_extra_B=497
+mem_stacks_B=0
+heap_tree=detailed
+n8: 6839 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n2: 336 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n2: 232 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n2: 160 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+    n1: 112 0x5696FEA: _nl_find_locale (findlocale.c:217)
+     n1: 112 0x569644A: setlocale (setlocale.c:340)
+      n1: 112 0x4029F0: ??? (in /usr/bin/ls)
+       n0: 112 0x568C045: (below main) (libc-start.c:308)
+    n0: 48 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+  n1: 104 0x5696FEA: _nl_find_locale (findlocale.c:217)
+   n1: 104 0x569644A: setlocale (setlocale.c:340)
+    n1: 104 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 104 0x568C045: (below main) (libc-start.c:308)
+ n2: 202 0x569CE8F: _nl_make_l10nflist (l10nflist.c:166)
+  n2: 161 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n1: 90 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+    n0: 90 in 2 places, all below massif's threshold (1.00%)
+   n0: 71 in 1 place, below massif's threshold (1.00%)
+  n0: 41 in 2 places, all below massif's threshold (1.00%)
+ n2: 136 0x56F1488: strdup (strdup.c:42)
+  n1: 108 0x569649C: setlocale (setlocale.c:369)
+   n1: 108 0x4029F0: ??? (in /usr/bin/ls)
+    n0: 108 0x568C045: (below main) (libc-start.c:308)
+  n0: 28 in 2 places, all below massif's threshold (1.00%)
+ n1: 120 0x56978A4: _nl_load_locale_from_archive (loadarchive.c:460)
+  n1: 120 0x5696B03: _nl_find_locale (findlocale.c:153)
+   n1: 120 0x569644A: setlocale (setlocale.c:340)
+    n1: 120 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 120 0x568C045: (below main) (libc-start.c:308)
+ n0: 5 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=511007
+mem_heap_B=6943
+mem_heap_extra_B=521
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=511684
+mem_heap_B=7026
+mem_heap_extra_B=550
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=512839
+mem_heap_B=7029
+mem_heap_extra_B=547
+mem_stacks_B=0
+heap_tree=detailed
+n8: 7029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n2: 464 0x569D022: _nl_make_l10nflist (l10nflist.c:241)
+  n2: 360 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n2: 216 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+    n1: 168 0x5696FEA: _nl_find_locale (findlocale.c:217)
+     n1: 168 0x569644A: setlocale (setlocale.c:340)
+      n1: 168 0x4029F0: ??? (in /usr/bin/ls)
+       n0: 168 0x568C045: (below main) (libc-start.c:308)
+    n0: 48 in 1 place, below massif's threshold (1.00%)
+   n1: 144 0x5696FEA: _nl_find_locale (findlocale.c:217)
+    n1: 144 0x569644A: setlocale (setlocale.c:340)
+     n1: 144 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 144 0x568C045: (below main) (libc-start.c:308)
+  n1: 104 0x5696FEA: _nl_find_locale (findlocale.c:217)
+   n1: 104 0x569644A: setlocale (setlocale.c:340)
+    n1: 104 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 104 0x568C045: (below main) (libc-start.c:308)
+ n2: 264 0x569CE8F: _nl_make_l10nflist (l10nflist.c:166)
+  n2: 223 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+   n2: 122 0x569D252: _nl_make_l10nflist (l10nflist.c:285)
+    n1: 95 0x5696FEA: _nl_find_locale (findlocale.c:217)
+     n1: 95 0x569644A: setlocale (setlocale.c:340)
+      n1: 95 0x4029F0: ??? (in /usr/bin/ls)
+       n0: 95 0x568C045: (below main) (libc-start.c:308)
+    n0: 27 in 1 place, below massif's threshold (1.00%)
+   n1: 101 0x5696FEA: _nl_find_locale (findlocale.c:217)
+    n1: 101 0x569644A: setlocale (setlocale.c:340)
+     n1: 101 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 101 0x568C045: (below main) (libc-start.c:308)
+  n0: 41 in 2 places, all below massif's threshold (1.00%)
+ n2: 136 0x56F1488: strdup (strdup.c:42)
+  n1: 108 0x569649C: setlocale (setlocale.c:369)
+   n1: 108 0x4029F0: ??? (in /usr/bin/ls)
+    n0: 108 0x568C045: (below main) (libc-start.c:308)
+  n0: 28 in 2 places, all below massif's threshold (1.00%)
+ n1: 120 0x56978A4: _nl_load_locale_from_archive (loadarchive.c:460)
+  n1: 120 0x5696B03: _nl_find_locale (findlocale.c:153)
+   n1: 120 0x569644A: setlocale (setlocale.c:340)
+    n1: 120 0x4029F0: ??? (in /usr/bin/ls)
+     n0: 120 0x568C045: (below main) (libc-start.c:308)
+ n0: 5 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=513817
+mem_heap_B=7109
+mem_heap_extra_B=571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=514577
+mem_heap_B=7109
+mem_heap_extra_B=571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=515881
+mem_heap_B=7109
+mem_heap_extra_B=571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=516627
+mem_heap_B=7109
+mem_heap_extra_B=571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=517931
+mem_heap_B=7109
+mem_heap_extra_B=571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=518776
+mem_heap_B=6996
+mem_heap_extra_B=444
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=520476
+mem_heap_B=7030
+mem_heap_extra_B=466
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=522112
+mem_heap_B=7040
+mem_heap_extra_B=480
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=536886
+mem_heap_B=7096
+mem_heap_extra_B=496
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=538208
+mem_heap_B=7152
+mem_heap_extra_B=512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=538434
+mem_heap_B=26384
+mem_heap_extra_B=528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=539900
+mem_heap_B=26386
+mem_heap_extra_B=550
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=541443
+mem_heap_B=59202
+mem_heap_extra_B=558
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=558501
+mem_heap_B=59212
+mem_heap_extra_B=572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=559567
+mem_heap_B=59225
+mem_heap_extra_B=583
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=560629
+mem_heap_B=59240
+mem_heap_extra_B=592
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=561699
+mem_heap_B=59254
+mem_heap_extra_B=602
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=562761
+mem_heap_B=59266
+mem_heap_extra_B=614
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=563831
+mem_heap_B=59280
+mem_heap_extra_B=624
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=564897
+mem_heap_B=59292
+mem_heap_extra_B=636
+mem_stacks_B=0
+heap_tree=detailed
+n6: 59292 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x5729F41: __alloc_dir (opendir.c:118)
+  n1: 32816 0x572A044: opendir_tail (opendir.c:69)
+   n1: 32816 0x403005: ??? (in /usr/bin/ls)
+    n0: 32816 0x568C045: (below main) (libc-start.c:308)
+ n2: 19436 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n0: 236 in 2 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n0: 1000 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=565959
+mem_heap_B=59305
+mem_heap_extra_B=647
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=567025
+mem_heap_B=59316
+mem_heap_extra_B=660
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=568087
+mem_heap_B=59331
+mem_heap_extra_B=669
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=569153
+mem_heap_B=59344
+mem_heap_extra_B=680
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=570215
+mem_heap_B=59359
+mem_heap_extra_B=689
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=571281
+mem_heap_B=59372
+mem_heap_extra_B=700
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=572343
+mem_heap_B=59385
+mem_heap_extra_B=711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=573409
+mem_heap_B=59396
+mem_heap_extra_B=724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=574471
+mem_heap_B=59411
+mem_heap_extra_B=733
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=575541
+mem_heap_B=59422
+mem_heap_extra_B=746
+mem_stacks_B=0
+heap_tree=detailed
+n6: 59422 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x5729F41: __alloc_dir (opendir.c:118)
+  n1: 32816 0x572A044: opendir_tail (opendir.c:69)
+   n1: 32816 0x403005: ??? (in /usr/bin/ls)
+    n0: 32816 0x568C045: (below main) (libc-start.c:308)
+ n2: 19566 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n0: 366 in 2 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n0: 1000 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=576603
+mem_heap_B=59431
+mem_heap_extra_B=761
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=577673
+mem_heap_B=59442
+mem_heap_extra_B=774
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=578735
+mem_heap_B=59459
+mem_heap_extra_B=797
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=579795
+mem_heap_B=59471
+mem_heap_extra_B=809
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=580861
+mem_heap_B=59494
+mem_heap_extra_B=826
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=582679
+mem_heap_B=59494
+mem_heap_extra_B=826
+mem_stacks_B=0
+heap_tree=peak
+n6: 59494 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x5729F41: __alloc_dir (opendir.c:118)
+  n1: 32816 0x572A044: opendir_tail (opendir.c:69)
+   n1: 32816 0x403005: ??? (in /usr/bin/ls)
+    n0: 32816 0x568C045: (below main) (libc-start.c:308)
+ n2: 19638 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n0: 438 in 2 places, all below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n0: 1000 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=584307
+mem_heap_B=27206
+mem_heap_extra_B=826
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=593199
+mem_heap_B=28190
+mem_heap_extra_B=842
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=630343
+mem_heap_B=36102
+mem_heap_extra_B=866
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=674821
+mem_heap_B=36100
+mem_heap_extra_B=844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=683669
+mem_heap_B=35044
+mem_heap_extra_B=828
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=689723
+mem_heap_B=35028
+mem_heap_extra_B=820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=700435
+mem_heap_B=34998
+mem_heap_extra_B=810
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=700569
+mem_heap_B=34799
+mem_heap_extra_B=737
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=700703
+mem_heap_B=34555
+mem_heap_extra_B=677
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=700837
+mem_heap_B=34386
+mem_heap_extra_B=622
+mem_stacks_B=0
+heap_tree=detailed
+n6: 34386 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 27020 0x4115F7: ??? (in /usr/bin/ls)
+  n1: 19200 0x402EC3: ??? (in /usr/bin/ls)
+   n0: 19200 0x568C045: (below main) (libc-start.c:308)
+  n1: 6888 0x4062A7: ??? (in /usr/bin/ls)
+   n1: 6888 0x408057: ??? (in /usr/bin/ls)
+    n1: 6888 0x404009: ??? (in /usr/bin/ls)
+     n0: 6888 0x568C045: (below main) (libc-start.c:308)
+  n1: 528 0x4052A6: ??? (in /usr/bin/ls)
+   n1: 528 0x403F08: ??? (in /usr/bin/ls)
+    n0: 528 0x568C045: (below main) (libc-start.c:308)
+  n1: 404 0x4117C2: ??? (in /usr/bin/ls)
+   n0: 404 in 3 places, all below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2392 0x56970EF: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 2392 0x56978FA: _nl_load_locale_from_archive (loadarchive.c:477)
+   n1: 2392 0x5696B03: _nl_find_locale (findlocale.c:153)
+    n1: 2392 0x569644A: setlocale (setlocale.c:340)
+     n1: 2392 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2392 0x568C045: (below main) (libc-start.c:308)
+ n1: 2048 0x569C906: read_alias_file (localealias.c:325)
+  n1: 2048 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 2048 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 2048 0x569644A: setlocale (setlocale.c:340)
+     n1: 2048 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 2048 0x568C045: (below main) (libc-start.c:308)
+ n1: 1600 0x569CA37: read_alias_file (localealias.c:391)
+  n1: 1600 0x569CBB2: _nl_expand_alias (localealias.c:198)
+   n1: 1600 0x5696E36: _nl_find_locale (findlocale.c:160)
+    n1: 1600 0x569644A: setlocale (setlocale.c:340)
+     n1: 1600 0x4029F0: ??? (in /usr/bin/ls)
+      n0: 1600 0x568C045: (below main) (libc-start.c:308)
+ n1: 984 0x41164F: ??? (in /usr/bin/ls)
+  n1: 984 0x406243: ??? (in /usr/bin/ls)
+   n1: 984 0x408057: ??? (in /usr/bin/ls)
+    n1: 984 0x404009: ??? (in /usr/bin/ls)
+     n0: 984 0x568C045: (below main) (libc-start.c:308)
+ n0: 342 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=79
+#-----------
+time=701155
+mem_heap_B=34208
+mem_heap_extra_B=560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=701281
+mem_heap_B=33104
+mem_heap_extra_B=520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=701444
+mem_heap_B=32360
+mem_heap_extra_B=464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=701604
+mem_heap_B=31816
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=701785
+mem_heap_B=31662
+mem_heap_extra_B=378
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=702929
+mem_heap_B=30052
+mem_heap_extra_B=356
+mem_stacks_B=0
+heap_tree=empty

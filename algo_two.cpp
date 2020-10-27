@@ -84,7 +84,7 @@ int coinExchange3(int total, int cashList[], int n, int *dp[], int num)
 
 
 /*
-给定钱x, 硬币（c1,c2..)，如果换使的硬币数最少，或是如果不能兑换成功，return -1
+给定钱x, 硬币（c1,c2..)，如何换使的硬币数最少，或是如果不能兑换成功，return -1
  Write a function to compute the fewest number of coins 
  that you need to make up that amount. If that amount of 
  money cannot be made up by any combination of the coins, return -1.
