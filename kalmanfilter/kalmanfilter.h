@@ -4,4 +4,12 @@
 
 #ifndef KAIMAN_FILTER_H_
 #define KALMAN_FILTER_H_
-#include "EGI"
+#include<iostream>
+#include<cstring>
+
+
+
+
+
+#endif
+
