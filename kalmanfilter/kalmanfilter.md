@@ -28,7 +28,7 @@ ${\displaystyle \Sigma =\mathrm {E} \left[\left(\mathbf {X} -\mathrm {E} [\mathb
 <br>
 <br>
 
-## 1.Kalmanfilter 
+## 1.Kalmanfilter(KF)
 动态系统的基本模型如下：
 ![](images/kalman_one.jpg)
 
@@ -108,7 +108,7 @@ $R=E(v_{m}v^{T}_{m})$
 https://www.guyuehome.com/15356
 
 
-# Extended Kalman filter
+# 2.Extended Kalman filter(EKF)
 对于非线性的动态系统，<br>
 $x_{k}=f(x_{k-1},u_{k-1})+w_{k-1}$ 
 <br>
@@ -116,10 +116,17 @@ $z_{k-1}=h(x_{k})+v_{k}$
 <br>
 $F_{k-1}=\frac{\partial{f}}{\partial{x}}|_{\hat{x}^{+}_{k},u_{k-1}}$
 <br>
-$h_{k}=\frac{\partial{h}}{\partial{x}}|_{\hat{x}^{-}_{k}}$
+$H_{k}=\frac{\partial{h}}{\partial{x}}|_{\hat{x}^{-}_{k}}$
+<br>
+其中F和H称为雅克比矩阵
+<br>
+对状态方程和观测方程的近似结果：<br>
+$\Delta{x_{k}}\approx F \Delta{X_{k-1}}+w_{k}$
+<br>
+$z_{k}\approx H \Delta{x_{k}}+v_{k}$
 
 ### 预测阶段：
-$\hat{x}^{-}_{k}=f({\hat{x}^{+}_{k},u_{k-1}})$
+$\hat{x}^{-}_{k}=f({\hat{x}^{+}_{k-1},u_{k-1}})$
 <br>
 $P^{-}_{k}=F_{k-1}P^{+}_{k-1}F^{T}_{k-1}+Q$
 
@@ -132,7 +139,91 @@ Kalman 增益：$K_{k}=P^{-}_{k}H^{T}_{k}(R+HP^{-}_{k}H^{T}_{k})^{-1}$
 <br>
 更新误差协方差：$P^{+}_{k}=(I-K_{k}H_{k})P^{-}_{k}$
 <br>
+EKF通过变倒数和雅克比矩阵，优化了KF处理非线性问题的性能
 
 
+# 3.Unscented Kalman Filter(UKF)
+无损kalman filter属于sigma-point kalmanfiler 或是线性回归 kalmanfilter类，该类filter使用了统计线性化技术，通过来自于随机变量的先验分布的n线性化一个随机变量的非线性函数
+UKF按一定距离取sigma points的方式，然后让这些sigma points按照状态转移矩阵更新sigma points状态的预测值，再根据sigma points算出权重，最终计算出x的预测值。
 
-# Unscented Kalman Filter
+## UKF的理念
+UKF也是通过预测，状态转移矩阵，预测测量值，更新测量值，再根据预测的测量值和实际的测量值之间的差值求出Kalman gain，最后根据Kalman gain获得准确的状态向量和协方差，不一样的部分是会出现sigma points
+
+## Unscented Transform
+![](images/kalman_nine.jpg)
+原始高斯分布通过非线性变换后其实是一个不规则的非线性分布，在EKF中在高斯均值点附近用泰勒级数近似非线性分布，从而获得近似高斯分布，但近似高斯分布不够精确，单一军支点无法预测图中的不规则分布，这是需要UKF。
+<br>
+
+### 1.UKF解决复杂不规则分布
+UKF从原始高斯分布中提取包括均值点在内的一系列代表点，并将代表点带入到非线性等式中，围绕这些点进行近似，从而获得更好的近似结果。
+<br>
+上图中，蓝色椭圆代表的UKF近似高斯分布更接近真实的不规则分布。<br>
+​总的来说，与EKF相比，UKF是处理非线性过程模型或非线性测量模型的更好的替代方法。UKF不会对非线性函数进行线性化处理，它用所谓的sigma 点来近似概率分布。其优势在于在很多情况下，sigma 点近似非线性转换的效果比线性化更好，此外它还可以省去计算复杂的雅可比矩阵的过程
+
+### 2. Unscented Transform
+<li>计算Sigma点集
+<br>
+选择合适的Sigma点数量n取决于系统的状态维度N：n=2N+1
+
+![](images/kalman_ten.jpg)
+<br>
+$X_{0}= \bar{x}$ <br>
+$X_{i}=\bar{x}+(\sqrt{(n+\lambda)P_{x}})_{i}, \quad i=1,...,n$
+<br>
+$X_{i}=\bar{x}-(\sqrt{(n+\lambda)P_{x}})_{i-n}, \quad i=n+1,...2n$
+
+(1)
+![](images/kalman_eleven.jpg)
+
+$\lambda={\alpha}^2 (n+k)-n$
+<br>
+$(\sqrt{(n+\lambda)P_{x}})_{i}$是矩阵平方根的第i行
+<br>
+这些sigma向量通过非线性函数传播： <br>
+
+$y_{i}=g(X_{i}) \quad i=0,...,2n$
+
+这里X表示sigma点矩阵。矩阵中每一列都表示一组Sigma点。如果是2维空间，那么矩阵的大小僵尸2x5。
+<br>
+$\lambda$是比例因子，表示应该选择距离均值多远的sigma点，$\lambda$的最佳值为3。
+<br>
+$P_{x}$也就是$\sum$为协方差矩阵，对$\sum$求平方需要找到一个满意条件的矩阵A: $\sum=A.A_{T}, A=\sqrt{\sum}$
+
+<li>为每个Sigma点分配权重
+
+(2)
+![](images/kalman_twelve.jpg)
+
+sigma点的选择和权重计算公式主要有一下四个可调节参数，可以使用这些参数对无损变换进行缩放：
+
+![](images/kalman_thirteen.jpg)
+
+其中最重要的是$\lambda$扩散参数，$\lambda$的最佳值为3-n，
+<li>把所有单个Sigma点代入非线性函数f
+
+<li>对经过上述加权和转换的点近似新的高斯分布
+计算近似高斯分布的均值和协方差：
+<br>
+
+(3) <br>
+$\bar{y} \approx \sum^{2n}_{i=0}W^{m}_{i}y_{i}$ 
+<br>
+$P_{y} \approx \sum^{2n}_{i=0} W^{c}_{i}\{y_{i}- \bar{y}\}\{Y_{i}-\bar{y}\}$
+![](images/kalman_fourteen.jpg)
+
+<li>计算新高斯分布的均值和方差
+<br>
+考虑添加过程噪声R 
+<br>
+(4)
+
+![](images/kalman_fifth.jpg)
+
+
+<li> UKF algorithm
+
+![](images/kalman_seventeen.jpg)
+
+![](images/UKF_one.jpg)
+![](images/UKF_two.jpg)
+![](images/UKF_three.jpg)
