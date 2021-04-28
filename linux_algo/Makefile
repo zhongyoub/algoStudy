@@ -14,7 +14,7 @@ all:$(TARGET) $(OBJS)
 	$(cc) $(CFLAGS) $@.c -o $@ $(LIBS)
 	
 %: %.cpp
-	$(ccc) $(CFLAGS) $@.cpp -o $@ $(LIBS)
+	$(ccc) $(CFLAGS) $@.cpp -o $@ $(LIBS)a
 
 .PHONY:clean
 
